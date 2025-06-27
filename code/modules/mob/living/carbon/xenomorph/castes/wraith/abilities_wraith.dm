@@ -226,10 +226,8 @@ GLOBAL_LIST_INIT(wraith_banish_very_short_duration_list, typecacheof(list(
 		stasis_target.notransform = TRUE //Stasis
 		stasis_target.overlay_fullscreen("banish", /atom/movable/screen/fullscreen/blind) //Force the blind overlay
 
-	if(!reserved_area) //If we don't have a reserved area, set one
-		reserved_area = SSmapping.RequestBlockReservation(3,3, SSmapping.transit.z_value, /datum/turf_reservation/banish)
-		if(!reserved_area) //If we *still* don't have a reserved area we've got a problem
-			CRASH("failed to reserve an area for [owner]'s Banish.")
+	if(!reserved_area)
+		reserved_area = new /datum/turf_reservation()
 		if(!reserved_area.reserve(width=3, height=3, z=SSmapping.transit.z_value))
 			CRASH("failed to reserve banish area")
 		new /area/arrival(reserved_area.reserved_turfs[1])
@@ -386,7 +384,6 @@ GLOBAL_LIST_INIT(wraith_banish_very_short_duration_list, typecacheof(list(
 	succeed_activate()
 	add_cooldown()
 
-	var/turf/T = get_turf(target)
 /datum/action/ability/xeno_action/timestop
 	name = "Time stop"
 	action_icon_state = "time_stop"
