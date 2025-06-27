@@ -230,8 +230,7 @@
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
 	dir = 2
 	},
-/turf/open/floor/vault,
-/area/barren/civilian/laundry)
+/turf/open/floor/vault)
 "bs" = (
 /obj/structure/table,
 /obj/machinery/light{
@@ -550,7 +549,7 @@
 "cY" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/wood/variable/wide/damaged,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "cZ" = (
 /obj/structure/barricade/guardrail,
 /obj/structure/barricade/guardrail{
@@ -1063,11 +1062,10 @@
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
 	dir = 2
 	},
-/turf/open/floor/tile/dark2,
-/area/barren/civilian/laundry)
+/turf/open/floor/tile/dark2)
 "fq" = (
 /turf/open/floor/wood/variable/wide,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "fr" = (
 /obj/structure/barricade/guardrail{
 	dir = 8
@@ -1649,8 +1647,7 @@
 /area/barren/misc/eastarmory)
 "hP" = (
 /obj/machinery/atmospherics/components/unary/vent_pump,
-/turf/open/floor/vault,
-/area/barren/civilian/laundry)
+/turf/open/floor/vault)
 "hQ" = (
 /obj/machinery/light{
 	dir = 8
@@ -1960,10 +1957,6 @@
 /obj/machinery/atmospherics/pipe/simple/green/hidden,
 /turf/open/floor/plating/ground/lavaland/basalt,
 /area/barren/cave/north)
-"jf" = (
-/obj/structure/barricade/wood,
-/turf/open/floor/wood/variable/wide/damaged,
-/area/barren/misc/ruin)
 "jg" = (
 /obj/structure/closet/secure_closet/engineering_personal,
 /turf/open/floor/plating,
@@ -2046,8 +2039,7 @@
 /area/barren/caves/south)
 "jz" = (
 /obj/effect/landmark/weed_node,
-/turf/open/floor/vault,
-/area/barren/civilian/laundry)
+/turf/open/floor/vault)
 "jA" = (
 /obj/structure/closet/walllocker/hydrant/extinguisher{
 	dir = 8
@@ -2410,13 +2402,6 @@
 /obj/structure/sign/heat,
 /turf/closed/wall,
 /area/barren/engie/engine)
-"lj" = (
-/obj/effect/landmark/weed_node,
-/obj/structure/barricade/wood{
-	dir = 4
-	},
-/turf/open/floor/wood/variable/wide/damaged,
-/area/barren/misc/ruin)
 "lk" = (
 /obj/machinery/atmospherics/pipe/manifold4w/green/hidden,
 /obj/structure/table/reinforced,
@@ -2573,7 +2558,7 @@
 "lZ" = (
 /obj/effect/ai_node,
 /turf/open/floor/wood/variable/wide,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "ma" = (
 /obj/machinery/door/airlock/mainship/secure/free_access{
 	name = "Brig Airlock"
@@ -2713,7 +2698,6 @@
 "mE" = (
 /obj/structure/closet/secure_closet,
 /obj/item/radio,
-/obj/item/spacecash/bundle/c500,
 /turf/open/floor/wood,
 /area/bigredv2/outside/general_offices)
 "mG" = (
@@ -3136,7 +3120,7 @@
 /obj/effect/landmark/weed_node,
 /obj/effect/landmark/xeno_silo_spawn,
 /turf/open/floor/wood/variable/wide,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "oG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
@@ -3256,8 +3240,7 @@
 /area/bigredv2/outside/general_offices)
 "pk" = (
 /obj/machinery/washing_machine,
-/turf/open/floor/vault,
-/area/barren/civilian/laundry)
+/turf/open/floor/vault)
 "pl" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/tile/dark2,
@@ -3485,13 +3468,11 @@
 "ql" = (
 /obj/structure/cable,
 /obj/machinery/power/apc,
-/turf/open/floor/vault,
-/area/barren/civilian/laundry)
+/turf/open/floor/vault)
 "qm" = (
 /obj/structure/closet/crate,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/vault,
-/area/barren/civilian/laundry)
+/turf/open/floor/vault)
 "qn" = (
 /obj/effect/ai_node,
 /turf/open/floor/plating/ground/lavaland/basalt,
@@ -3515,7 +3496,6 @@
 /turf/open/floor/freezer,
 /area/barren/civilian)
 "qu" = (
-/obj/machinery/telecomms/relay/preset/telecomms/ground,
 /obj/structure/window/reinforced/toughened{
 	dir = 5
 	},
@@ -3582,8 +3562,7 @@
 /area/barren/medical/chemistry)
 "qK" = (
 /obj/structure/table/reinforced,
-/turf/open/floor/vault,
-/area/barren/civilian/laundry)
+/turf/open/floor/vault)
 "qM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/weed_node,
@@ -3655,8 +3634,7 @@
 /turf/open/floor/plating,
 /area/shuttle/drop2/lz2)
 "qZ" = (
-/turf/open/floor/vault,
-/area/barren/civilian/laundry)
+/turf/open/floor/vault)
 "ra" = (
 /obj/effect/decal/cleanable/blood/writing{
 	dir = 5
@@ -3670,11 +3648,11 @@
 /turf/closed/mineral/smooth/basalt,
 /area/barren/cave/lz1)
 "rd" = (
-/obj/structure/barricade/wood{
-	dir = 8
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
+	dir = 8
+	},
+/obj/structure/barricade/wooden{
 	dir = 8
 	},
 /turf/open/floor,
@@ -3700,12 +3678,6 @@
 /obj/effect/landmark/corpsespawner/miner,
 /turf/open/floor/plating/ground/lavaland/basalt,
 /area/barren/caves/southwest)
-"rk" = (
-/obj/structure/barricade/wood{
-	dir = 4
-	},
-/turf/open/floor/wood/variable/wide/damaged,
-/area/barren/misc/ruin)
 "rl" = (
 /obj/machinery/atmospherics/components/unary/vent_pump{
 	dir = 4;
@@ -4110,12 +4082,12 @@
 	},
 /area/barren/medical)
 "te" = (
-/obj/structure/barricade/wood{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
 	dir = 4
+	},
+/obj/structure/barricade/wooden{
+	dir = 8
 	},
 /turf/open/floor/mainship/black/full,
 /area/barren/security)
@@ -4832,7 +4804,7 @@
 "wx" = (
 /obj/effect/landmark/start/job/survivor,
 /turf/open/floor/wood/variable/wide,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "wy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood,
@@ -4957,8 +4929,7 @@
 "xd" = (
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/vault,
-/area/barren/civilian/laundry)
+/turf/open/floor/vault)
 "xe" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
@@ -5735,8 +5706,7 @@
 "AV" = (
 /obj/machinery/washing_machine,
 /obj/effect/decal/cleanable/cobweb2,
-/turf/open/floor/vault,
-/area/barren/civilian/laundry)
+/turf/open/floor/vault)
 "AW" = (
 /obj/effect/landmark/weed_node,
 /turf/open/floor/plating/ground/lavaland/basalt,
@@ -6513,7 +6483,7 @@
 "EQ" = (
 /obj/structure/bed/chair/wood/wings,
 /turf/open/floor/wood/variable/wide/damaged,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "ER" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
@@ -6688,7 +6658,7 @@
 	},
 /obj/effect/spawner/random/misc/cigarettes,
 /turf/open/floor/wood/variable/wide,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "FC" = (
 /obj/effect/turf_decal/warning_stripes/thick{
 	dir = 1
@@ -7704,8 +7674,7 @@
 /turf/open/floor,
 /area/template_noop)
 "Kw" = (
-/turf/closed/wall,
-/area/barren/civilian/laundry)
+/turf/closed/wall)
 "Kx" = (
 /obj/structure/bed/chair/pew{
 	dir = 5
@@ -7952,7 +7921,7 @@
 "LH" = (
 /obj/effect/landmark/weed_node,
 /turf/open/floor/wood/variable/wide,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "LI" = (
 /obj/machinery/door/airlock/colony/research{
 	dir = 1;
@@ -8103,7 +8072,7 @@
 /area/barren/cave/central)
 "Mq" = (
 /turf/closed/wall/wood,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "Mt" = (
 /obj/effect/landmark/weed_node,
 /obj/effect/landmark/xeno_tunnel_spawn,
@@ -8310,7 +8279,7 @@
 /obj/item/weapon/gun/shotgun/double,
 /obj/effect/spawner/random/weaponry/ammo/shotgun,
 /turf/open/floor/wood/variable/wide,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "Nq" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/plate,
@@ -8678,7 +8647,7 @@
 /area/barren/cave/lz1)
 "Ph" = (
 /turf/open/floor/wood/variable/wide/damaged,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "Pj" = (
 /obj/machinery/door/airlock/multi_tile/mainship/generic{
 	dir = 8
@@ -9040,8 +9009,7 @@
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
 	dir = 2
 	},
-/turf/open/floor/vault,
-/area/barren/civilian/laundry)
+/turf/open/floor/vault)
 "QV" = (
 /obj/effect/landmark/lv624/fog_blocker/xeno_spawn,
 /turf/closed/wall,
@@ -9154,7 +9122,7 @@
 "Rw" = (
 /obj/effect/landmark/corpsespawner/security,
 /turf/open/floor/wood/variable/wide/damaged,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "Rx" = (
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
 	dir = 1
@@ -9218,7 +9186,7 @@
 "RN" = (
 /obj/effect/landmark/weed_node,
 /turf/open/floor/wood/variable/wide/damaged,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "RO" = (
 /obj/docking_port/stationary/crashmode,
 /turf/closed/mineral/smooth/basalt,
@@ -9658,7 +9626,7 @@
 /turf/open/floor,
 /area/barren/civilian)
 "TS" = (
-/obj/structure/barricade/wood{
+/obj/structure/barricade/wooden{
 	dir = 8
 	},
 /turf/open/floor/plating/ground/lavaland/basalt,
@@ -9915,7 +9883,7 @@
 "Vn" = (
 /obj/structure/window_frame/wood,
 /turf/open/floor/wood/variable/wide/damaged,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "Vp" = (
 /obj/structure/table/mainship,
 /turf/open/floor/wood,
@@ -9960,8 +9928,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/vault,
-/area/barren/civilian/laundry)
+/turf/open/floor/vault)
 "VC" = (
 /obj/structure/closet/wardrobe/chemistry_white,
 /obj/effect/decal/cleanable/cobweb{
@@ -9988,8 +9955,7 @@
 /area/barren/cave/central)
 "VH" = (
 /obj/structure/cable,
-/turf/open/floor/vault,
-/area/barren/civilian/laundry)
+/turf/open/floor/vault)
 "VJ" = (
 /turf/closed/mineral/smooth/indestructible,
 /area/template_noop)
@@ -10565,7 +10531,7 @@
 "Yy" = (
 /obj/item/stack/sheet/wood,
 /turf/open/floor/wood/variable/wide/damaged,
-/area/barren/misc/ruin)
+/area/barren/cave/northwest)
 "YA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
@@ -13771,7 +13737,7 @@ fq
 fq
 oF
 cY
-jf
+Ph
 fM
 oB
 fM
@@ -13929,7 +13895,7 @@ fq
 lZ
 fq
 Rw
-jf
+Ph
 fM
 qG
 fM
@@ -14397,8 +14363,8 @@ ZS
 ZS
 ZS
 Mq
-lj
-rk
+RN
+Ph
 cY
 Ph
 ZS
@@ -14558,7 +14524,7 @@ Mq
 Vn
 Vn
 Yy
-rk
+Ph
 ZS
 ZS
 ZS

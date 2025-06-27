@@ -230,9 +230,11 @@ GLOBAL_LIST_INIT(wraith_banish_very_short_duration_list, typecacheof(list(
 		reserved_area = SSmapping.RequestBlockReservation(3,3, SSmapping.transit.z_value, /datum/turf_reservation/banish)
 		if(!reserved_area) //If we *still* don't have a reserved area we've got a problem
 			CRASH("failed to reserve an area for [owner]'s Banish.")
+		if(!reserved_area.reserve(width=3, height=3, z=SSmapping.transit.z_value))
+			CRASH("failed to reserve banish area")
+		new /area/arrival(reserved_area.reserved_turfs[1])
 
 	var/turf/target_turf = reserved_area.reserved_turfs[5]
-	new /area/arrival(target_turf) //So we don't get instagibbed from the space area
 
 	if(isxeno(banishment_target)) //If we're a xeno, disgorge all vored contents
 		var/mob/living/carbon/xenomorph/xeno_target = banishment_target
@@ -384,36 +386,7 @@ GLOBAL_LIST_INIT(wraith_banish_very_short_duration_list, typecacheof(list(
 	succeed_activate()
 	add_cooldown()
 
-///Return TRUE if we have a block, return FALSE otherwise
-/proc/turf_block_check(atom/subject, atom/target, ignore_can_pass = FALSE, ignore_density = FALSE, ignore_closed_turf = FALSE, ignore_invulnerable = FALSE, ignore_objects = FALSE, ignore_mobs = FALSE, ignore_space = FALSE)
 	var/turf/T = get_turf(target)
-	if(isspaceturf(T) && !ignore_space)
-		return TRUE
-	if(isclosedturf(T) && !ignore_closed_turf) //If we care about closed turfs
-		return TRUE
-	for(var/atom/blocker AS in T)
-		if((blocker.atom_flags & ON_BORDER) || blocker == subject) //If they're a border entity or our subject, we don't care
-			continue
-		if(!blocker.CanPass(subject, T) && !ignore_can_pass) //If the subject atom can't pass and we care about that, we have a block
-			return TRUE
-		if(!blocker.density) //Check if we're dense
-			continue
-		if(!ignore_density) //If we care about all dense atoms or only certain types of dense atoms
-			return TRUE
-		if((blocker.resistance_flags & INDESTRUCTIBLE) && !ignore_invulnerable) //If we care about dense invulnerable objects
-			return TRUE
-		if(isobj(blocker) && !ignore_objects) //If we care about dense objects
-			var/obj/obj_blocker = blocker
-			if(!isstructure(obj_blocker)) //If it's not a structure and we care about objects, we have a block
-				return TRUE
-			var/obj/structure/blocker_structure = obj_blocker
-			if(!blocker_structure.climbable) //If it's a structure and can't be climbed, we have a block
-				return TRUE
-		if(ismob(blocker) && !ignore_mobs) //If we care about mobs
-			return TRUE
-
-	return FALSE
-
 /datum/action/ability/xeno_action/timestop
 	name = "Time stop"
 	action_icon_state = "time_stop"

@@ -537,19 +537,19 @@
 	var/deconstructing = FALSE
 
 /turf/open/floor/plating/ground/lavaland/catwalk/built/attack_alien(mob/living/carbon/xenomorph/xeno_attacker, damage_amount = xeno_attacker.xeno_caste.melee_damage, damage_type = BRUTE, damage_flag = MELEE, effects = TRUE, armor_penetration = 0, isrightclick = FALSE)
-	if(xeno_attacker.status_flags & INCORPOREAL)
-		return
-	if(xeno_attacker.a_intent != INTENT_HARM)
-		return
-	if(deconstructing)
-		return
-	deconstructing = TRUE
-	if(!do_after(xeno_attacker, 10 SECONDS, NONE, src, BUSY_ICON_BUILD))
-		deconstructing = FALSE
-		return
-	deconstructing = FALSE
-	playsound(src, 'sound/weapons/genhit.ogg', 50, TRUE)
-	var/turf/current_turf = get_turf(src)
-	if(current_turf)
-		current_turf.flags_atom |= AI_BLOCKED
-	ChangeTurf(/turf/open/liquid/lava)
+    if(xeno_attacker.status_flags & INCORPOREAL)
+        return
+    if(xeno_attacker.a_intent != INTENT_HARM)
+        return
+    if(deconstructing)
+        return
+    deconstructing = TRUE
+    if(!do_after(xeno_attacker, 10 SECONDS, NONE, src, BUSY_ICON_BUILD))
+        deconstructing = FALSE
+        return
+    deconstructing = FALSE
+    playsound(src, 'sound/weapons/genhit.ogg', 50, TRUE)
+    var/turf/current_turf = get_turf(src)
+    if(current_turf)
+        current_turf.turf_flags |= AI_BLOCKED
+    ChangeTurf(/turf/open/liquid/lava)
