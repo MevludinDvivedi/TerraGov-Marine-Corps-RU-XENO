@@ -10,6 +10,7 @@
 #define MAP_LV_759 "LV759"
 #define MAP_PRISON_STATION "Prison Station"
 #define MAP_RESEARCH_OUTPOST "Research Outpost"
+#define MAP_BARRENQUILLA_MINING "Barrenquilla Mining Facility"
 #define MAP_WHISKEY_OUTPOST "Whiskey Outpost"
 #define MAP_MAGMOOR_DIGSITE "Magmoor Digsite IV"
 #define MAP_GELIDA_IV "Gelida IV"

@@ -320,7 +320,8 @@
 
 
 //lava rock
-/turf/closed/brock
+
+/turf/closed/mineral/brock
 	name = "basalt rock"
 	icon = 'icons/turf/lava.dmi'
 	icon_state = "brock"
