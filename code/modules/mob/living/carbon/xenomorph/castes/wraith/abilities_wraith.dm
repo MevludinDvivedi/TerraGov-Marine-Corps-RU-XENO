@@ -226,13 +226,13 @@ GLOBAL_LIST_INIT(wraith_banish_very_short_duration_list, typecacheof(list(
 		stasis_target.notransform = TRUE //Stasis
 		stasis_target.overlay_fullscreen("banish", /atom/movable/screen/fullscreen/blind) //Force the blind overlay
 
-	if(!reserved_area)
-		reserved_area = new /datum/turf_reservation()
-		if(!reserved_area.reserve(width=3, height=3, z=SSmapping.transit.z_value))
-			CRASH("failed to reserve banish area")
-		new /area/arrival(reserved_area.reserved_turfs[1])
+	if(!reserved_area) //If we don't have a reserved area, set one
+		reserved_area = new /datum/turf_reservation/banish()
+		if(!reserved_area.reserve(3, 3, 1, SSmapping.transit.z_value)) //Width, height, z_size, z_reservation
+			CRASH("failed to reserve an area for [owner]'s Banish.")
 
 	var/turf/target_turf = reserved_area.reserved_turfs[5]
+	new /area/arrival(target_turf) //So we don't get instagibbed from the space area
 
 	if(isxeno(banishment_target)) //If we're a xeno, disgorge all vored contents
 		var/mob/living/carbon/xenomorph/xeno_target = banishment_target
